@@ -1,0 +1,17 @@
+#primary {
+    padding-block: 14px;
+    
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+    }
+}
+
+#secondary {
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    justify-content: space-between;
+}
