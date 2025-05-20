@@ -120,3 +120,110 @@ aside {
         object-fit: cover;
     }
 }
+
+@media (width <= 63rem) {
+    .container {
+        width: 20.5rem;
+        padding-inline: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #featured {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        & div:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & img {
+                height: 12.5rem;
+            }
+
+            & figcaption {
+                & h2 {
+                    font-size: 14px;
+                }
+            }
+            
+        }
+
+        & .card {
+            img {
+                width: 20.5rem;
+                height: 26rem;
+                align-items: center;
+            justify-content: center;
+            }
+
+            & figcaption {
+                & h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    #weekly {
+        div {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column;
+            align-items: center;
+
+            & figure {
+                width: 20.5rem;
+
+                & img {
+                    height: 12.5rem;
+                    width: 20.5rem;
+                }
+            }
+
+        }
+    }
+
+    #ai {
+        & div {
+            & article {
+                display: flex;
+                flex-direction: row-reverse;
+
+                & div:nth-child(1){
+                    max-width: 14.5rem;
+                    max-height: 10.25rem;
+                    margin-bottom: 2rem;
+
+                    & h3 {
+                        font-size: .9rem;
+                    }
+
+                    & p {
+                        font-size: .55rem;
+                    }
+                }
+
+                & img {
+                    margin-top: 3px;
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+
+        & article {
+            & img {
+                margin-top: 3px;
+            }
+        }
+    }
+}
